@@ -63,7 +63,43 @@
 
 	\item As a user I want to be able to use a translated version of the webpage
 	\subitem{\textbf{Acceptance:}} An option to change the language of the webpage should be accessible. The most common languages should also be available. \\
-
 \end{itemize}
+
+\begin{table}[H]
+	\caption{Abstract and Concrete Lean Testing Principles}
+	\begin{center}
+		\begin{tabular}{| m{24em} | m{6em} | m{6em} |} 
+			\hline
+			Test Case & Development Time in m (approx) & Execution Time in s (approx) \\
+			\hline
+			\hline
+			Access Godot Webpage & 10 & 5 \\
+			Download latest & 5 & 7 \\
+			Access Contribution Page & 10 & 10 \\
+			Verify Sponsors Pages Work & 25 & 26 \\
+			Access Engine Documentation & 10 & 9 \\
+			Access Donation Page & 20 & 17 \\
+			Search For Specific Item In Documentation & 15 & 17 \\
+			Find Resources For Bug Reporting & 25 & 20 \\
+			Finding Older Versions of Godot & 20 & 20 \\
+			Changing To Translated Version & 10 & 10 \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\begin{tablenotes}
+		\small
+		\item Table 1: Values from the GUI testing suite
+	\end{tablenotes}
+\end{table}
+
+\newpage
+
+\section{Discussion}
+
+My test suite is based on testing the functionality and usage of the Godot foundations webpage for the Godot Game Engine.
+The reasoning behind this decision was partially due to the fact that I am studying a game engine focused programme, and
+partially because it is easy to reason about the different requirements of an open source development project.
+
+In the table below, I will describe and explain why I chose these specific features for my suite and why they may be of use
 
 \end{document}

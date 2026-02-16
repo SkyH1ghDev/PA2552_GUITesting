@@ -108,6 +108,7 @@ INPUT /home/SkyH1ghDev/.miktex/texmfs/install/fonts/tfm/public/cm/cmr12.tfm
 INPUT /home/SkyH1ghDev/.miktex/texmfs/install/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /home/SkyH1ghDev/.miktex/texmfs/install/fonts/tfm/jknappen/ec/tcrm1000.tfm
 INPUT /home/SkyH1ghDev/.miktex/texmfs/install/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /home/SkyH1ghDev/.miktex/texmfs/install/fonts/tfm/public/cm/cmr9.tfm
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
@@ -123,3 +124,5 @@ INPUT /home/SkyH1ghDev/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr
 INPUT /home/SkyH1ghDev/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /home/SkyH1ghDev/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT /home/SkyH1ghDev/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /home/SkyH1ghDev/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb
+INPUT /home/SkyH1ghDev/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb
