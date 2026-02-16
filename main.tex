@@ -96,6 +96,19 @@
 
 \section{Discussion}
 
+The experience I had using EyeAutomate and GUI testing was relatively pleasing with a fair few problems in the beginning.
+I'd like to begin by addressing the issues I have had using EyeAutomate together with Linux. From my brief research and 
+troubleshooting, it seems as though the rendering API Wayland does not interact well with either EyeAutomate nor Sikulix
+as the ability for automated cursor movement seems to be disabled for security reasons. This would not have been a problem
+if modern Linux distributions still used the legacy X11 API. This all eventually required me to repartition one of my hard
+drives and install Windows 11 causing a smaller headache.
+
+On the other hand, GUI testing has proved to be a useful tool when automating specifically visual and UX-specific use cases.
+For me as a programmer that focuses on 3D-graphics, I can see certain areas where this kind of testing may be applicable.
+I could for example find this tool to be exceptionally powerful for website and usability testing in dynamic settings.
+However, due to the nature of visual testing, some types of minor changes like moving a button to a different page or changing
+the colour scheme or theme of the test subject may completely break the tests.
+
 My test suite is based on testing the functionality and usage of the Godot foundations webpage for the Godot Game Engine.
 The reasoning behind this decision was partially due to the fact that I am studying a game engine focused programme, and
 partially because it is easy to reason about the different requirements of an open source development project.
@@ -134,19 +147,33 @@ to test which resultingly also partly implies why they are of high quality.
 	work with the engine. The responsibility of this test is to ascertain the possibility of finding and reading such materials.
 	
 	\item Access Donation Page
-	\subitem{-} 
+	\subitem{-} Similarily to sponsoring, monetary stability may be achieved through smaller contributions from individuals that want to 
+	support the Godot foundations work. This also enables people that may not have the required knowledge or experience to aid financially
+	rather than submit code. This was a more complex test, not only checking whether there is a possibility to donate, but also ensuring 
+	both monthly as well as one-time payments are accepted.
 
 	\item Search For Specific Item In Documentation
-	\subitem{-} 
+	\subitem{-} A fundamental part of documentation and encyclopedia-like documents is the ability to search and find the required information
+	through minimal effort from the user. The test written for this case encases the scenario where you find the documentation page, use the search
+	box for finding the sought after information, and test the functionality of opening a found result.
 
 	\item Find Resources For Bug Reporting
-	\subitem{-} 
+	\subitem{-} Even thoroughly-tested codebases and programs do inevitably end up with bugs. Allowing users to report these bugs can not only further 
+	cover cases that the tests have failed to flag, but also develop and better the tests for increased coverage in the future. This test
+	confirms that a way of reporting these bugs is available to the users of the game engine.
 
 	\item Finding Older Versions Of Godot
-	\subitem{-} 
+	\subitem{-} It is important to acknowledge the need for a versioning system in combination with a way to download earlier versions of the product.
+	This is a feature that is especially important for applications that themselves interact with other systems as conflicts may happen. For our use case,
+	this ensures the user can continue working on their game in an older version of the engine should their project not be portable to newer versions due
+	to bugs or project-breaking changes.
 
 	\item Changing To Translated Version
-	\subitem{-} 
+	\subitem{-} For a wider usage of the product, it is crucial to have correct localisation in case the user doesn't understand the english language.
+	This case in isolation may not be very relevant, however in combination with the previous nine cases, helping non-english speaking individuals partake
+	in the project may increase the collective value in all other use cases.
+
+
 
 \end{itemize}
 
