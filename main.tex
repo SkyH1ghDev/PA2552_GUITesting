@@ -74,7 +74,7 @@
 			\hline
 			\hline
 			Access Godot Webpage & 10 & 5 \\
-			Download latest & 5 & 7 \\
+			Download Latest Version & 5 & 7 \\
 			Access Contribution Page & 10 & 10 \\
 			Verify Sponsors Pages Work & 25 & 26 \\
 			Access Engine Documentation & 10 & 9 \\
@@ -100,6 +100,54 @@ My test suite is based on testing the functionality and usage of the Godot found
 The reasoning behind this decision was partially due to the fact that I am studying a game engine focused programme, and
 partially because it is easy to reason about the different requirements of an open source development project.
 
-In the table below, I will describe and explain why I chose these specific features for my suite and why they may be of use
+In the list below, I will describe and explain why I chose these specific features for my suite, why they are relevant
+to test which resultingly also partly implies why they are of high quality. 
+
+\begin{itemize}
+	\item Access Godot Webpage
+	\subitem{-} Accessing the main component of any application is a requirement before being able to test anything else.
+	That same principle applies here and this theme can be tracked throughout my testing as this specific test case serves
+	as the isolating member that restores the original state of the Godot webpage after every test. This case is fairly simple
+	all in all making it easy to read and by implication also rewrite should the agile environment require it. This scenario
+	only encompasses the opening of the firefox web browser, search of the godot website and handling the closure of the web browser.
+
+	\item Download Latest Version
+	\subitem{-} As with any website that hosts any kind of file, a way to download or retrieve that file is also generally a 
+	requirement. This test case handles the scenario where the user wants to download the latest version of the Godot Engine.
+	A limitation with my test implementation is that the file does not get downloaded as it should be per the defined requirements
+	above, this is to avoid any rate limitation and unecessary retrieval of the same large file over several test suite runs.
+
+	\item Access Contribution Page
+	\subitem{-} Free Open Source Software is heavily reliant on active maintainers and contributors in order to stay alive and up 
+	to date. Resources for anyone that wants to take part in this should be available in order to create an environment where new
+	contributors may join in a systematic and productive way. This case covers the availability of a contribution page as well as 
+	makes sure the documentation may be accessed through the main webpage.
+
+	\item Verify Sponsors Pages Work
+	\subitem{-} Third-party financial aid, especially for non-profit foundations, can boost the possibilities of reaching certain
+	goals that are being aimed for. Consequently, a means to garner sponsorships and financial support is through advertisement of
+	each sponsors personal page. In this test, the ability to see and access the different webpages is being tested. For a more accurate
+	result, a variety sponsor links are being tested to ensure that no link is invalid or doesn't work.
+
+	\item Access Engine Documentation
+	\subitem{-} For this software to be usable, the Godot foundation needs to guarantee access to materials that enable developers to 
+	work with the engine. The responsibility of this test is to ascertain the possibility of finding and reading such materials.
+	
+	\item Access Donation Page
+	\subitem{-} 
+
+	\item Search For Specific Item In Documentation
+	\subitem{-} 
+
+	\item Find Resources For Bug Reporting
+	\subitem{-} 
+
+	\item Finding Older Versions Of Godot
+	\subitem{-} 
+
+	\item Changing To Translated Version
+	\subitem{-} 
+
+\end{itemize}
 
 \end{document}
